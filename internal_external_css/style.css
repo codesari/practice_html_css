@@ -1,0 +1,58 @@
+/* *{
+   margin: 0;
+   padding: 0;
+} */
+/* yıldız herşeyi seçer,universal selector */
+
+#prf3{
+
+    background-color: burlywood;
+}
+
+#prf1{
+
+    background-color: aquamarine;
+}
+
+#prf2{
+
+    background-color:chartreuse;
+    width: 30%;
+    /* sayfanın %30 nu kaplıyor */
+    margin: auto;
+    /* kalan boşluğu otomatik olarak dağıt */
+    /* 1 rem = 16pixel */
+    border: 3px solid blue;
+}
+
+.ortak{
+    background-color: aquamarine;
+}
+
+#id3{
+    background-color: blueviolet;
+    border-style: dotted;
+    border-width: 20px;
+    border-radius: 20px;
+    border: 5px dotted  red;
+    padding: 20px;
+    margin:50px
+    /* auto dersen ,dışında kalan alanı otomatik olarak dağıt */
+    /* burada 2 değer verildiğinde 10 alttan üstten boşluk veriyor
+    + sağ sol,10px->alt-üst  20px->sağ,sol
+    4 değer verince saat yönü gibi boşluk veriyor
+    3 tane olursa sol,orta,sağ
+     */
+}
+
+.container{
+    border: 2px solid red;
+    padding: 20px;
+}
+
+#last{
+    background-color: aqua;
+    padding: inherit;
+    /* kendinden önceki conteinerdan 20 px i miras al */
+}
+

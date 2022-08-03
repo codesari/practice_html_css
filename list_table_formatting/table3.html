@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+
+        table{
+
+            border-collapse: collapse;
+
+        }
+
+        td{
+
+        text-align: center;
+
+        }
+
+        #last {
+
+            background-color: darkgoldenrod;
+            padding: 2rem;
+        }
+
+        tr:nth-child(even){
+            background-color: aquamarine;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Tablolar</h1>
+    <hr>
+    <table border="1" width="100%">
+        <caption>Haftalık Dersler</caption>
+        
+        <thead>
+
+    <tr>
+    <th>Günler</th>
+    <th>Ders</th>
+    <th>Not</th>
+    </tr>
+
+        </thead>
+        
+
+        <tbody>
+           
+            <tr>
+                <td>Pazartersi</td>
+                <td>HTML</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Salı</td>
+                <td>CSS</td>
+                <td rowspan="3">90</td>
+            </tr>
+            <tr>
+                <td>Çarşamba</td>
+                <td>Javascript</td>
+                <!-- <td>90</td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">Perşembe</td>
+                <td>React</td>
+                <!-- <td>98</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Perşembe</td> -->
+                <td>React-Native</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Cuma</td>
+                <td>DJango</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td id="last">Cumartesi Tatil</td>
+                <td colspan="2" align="center">Boş</td>
+                <!-- <td>Boş</td> -->
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>

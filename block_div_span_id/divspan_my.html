@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivSpan</title>
+
+    <style>
+
+        #div2{
+
+            border: 3px solid red;
+            background-color: chocolate;
+            font-family:'Courier New', Courier, monospace ;
+            width: 50%;
+            margin: auto;
+            border-radius: 25px;
+            box-shadow: 3px 3px 10px yellow;
+        }
+
+        #span2{
+
+            font-weight: bolder;
+            background-color: red;
+        }
+        .container{
+
+            border:5px solid yellow;
+            background-color:crimson;
+            width: 80%;
+            margin: auto;
+            border-radius: 30px;
+        }
+
+        #span4{
+            font-size: 2rem;
+            font-weight: bolder;
+            background-color: blueviolet;
+            color: green;
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+
+        <h1>Bu bir başlıktır</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis temporibus est tempora, minus, veritatis eaque hic excepturi nemo architecto modi provident alias qui praesentium optio dicta quaerat dolor, fugit odit.</p>
+    </div>
+
+    <div id="div2">
+        <h1>Bu bir başlıktır</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis temporibus est tempora, minus, veritatis eaque hic <span id="span2">excepturi nemo architecto modi provident alias qui</span> praesentium optio dicta quaerat dolor, fugit odit.</p>
+    </div>
+
+    <div class="container">
+        <div>
+            <h1>Bu bir başlıktır</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis temporibus est tempora, minus, veritatis eaque hic excepturi nemo architecto modi provident alias qui praesentium optio dicta quaerat dolor, fugit odit.</p>
+        </div>
+    
+        <div>
+            <h1>Bu bir başlıktır</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis temporibus est tempora, minus, <span id="span4">eritatis eaque hic excepturi</span> nemo architecto modi provident alias qui praesentium optio dicta quaerat dolor, fugit odit.</p>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
