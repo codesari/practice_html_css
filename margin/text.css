@@ -1,0 +1,34 @@
+
+h2{
+
+    text-align: center;
+}
+#par1{
+
+    color: blue;
+    text-align: center;
+
+}
+
+#par2{
+
+    text-align: right;
+    
+}
+
+#par3{
+
+    text-align:justify;
+}
+
+#par4{
+
+    text-decoration: overline wavy;
+}
+
+#par5{
+
+    text-transform: capitalize;
+    text-transform: uppercase;
+    
+}
