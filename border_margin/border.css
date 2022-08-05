@@ -1,0 +1,29 @@
+.p1{
+    border-width: 30px;
+    border-style: solid;
+    border-color: red green blue yellow;
+    
+    /* border-width: 100px; bayrak görünümü elde ediliyor */
+    /* border-width: 50px == border-width: 50px 50px 50px 50px; saat yönünde değer veriyor*/
+    
+}
+
+.p2{
+
+    /* border width,style ve color ın hepsini barındıran aşağıdaki kod */
+
+    border: 10px dotted green;
+    /* bu kullanımda 1 den fazla renk veremezsin */
+}
+
+.p3{
+
+    border: 10px solid blue;
+    border-radius: 100px;
+    /* yuvarlağa ulaştığı px den sonra px artırılsa da daire değişmiyor */
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    
+    
+}
