@@ -27,3 +27,13 @@
     
     
 }
+
+.p4{
+
+    border: 20px double coral;
+}
+.p5{
+
+    border: 20px groove aqua;
+    /* groove = oluk,yiv */
+}
