@@ -10,14 +10,22 @@
 
         ul{
 
-            
+            /* windows+. emojileri açar  */
+            list-style-type: none;
         }
 
         .item{
 
-            list-style-type: georgian;
+            /* list-style-type: '❤';
             /* list-style-position: inside; */
-            list-style-position: outside;
+            list-style-position: outside; */
+        }
+
+        /* herbir li den önce anlamına gelir  */
+        li::before{
+            content: "\2764";
+            color: tomato;
+            padding-right: 10px;
         }
     </style>
 </head>
