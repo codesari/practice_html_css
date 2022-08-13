@@ -1,4 +1,12 @@
 
+html{
+
+    font-size: 30px;
+    /* 1rem i 30px olarak ayarlayamış olduk */
+    /* remler html deki font-size a bakar */
+    /* em ler parentlarına bakar  */
+
+}
 body{
 
     /* body,görünen alanın tamamı değil,width vermen lazım */
@@ -46,4 +54,18 @@ body{
     /* 3*16px olması beklenirken parentından dolayı 32px*3 oldu */
 
     /* 96px */
+}
+
+.d4{
+    font-size: 1em;
+
+}
+
+.d5{
+    font-size: 2em;
+}
+
+.d6{
+
+    font-size: 3em;
 }
