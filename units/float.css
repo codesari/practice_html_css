@@ -22,18 +22,20 @@
 #boxes{
 
     float: left;
-    width: 33.33%;
     font-size: 2rem;
 }
 .box1{
 
     background-color: darkgoldenrod;
+    width: 20%;
 }
 .box2{
 
     background-color:blue;
+    width: 50%;
 }
 .box3{
 
     background-color:darkgreen;
+    width: 20%;
 }
