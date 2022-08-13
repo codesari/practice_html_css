@@ -1,4 +1,21 @@
 .abs{
     background-color: aqua;
-    width: 5cm;
+    
+}
+
+.div2{
+    background-color: orange;
+    width: 50%;
+    height: 50%;
+}
+.div3{
+    background-color: darkmagenta;
+    width: 50%;
+    /* yüzde kullanacağın zaman kullandığın yerin parentı olması lazım */
+    height: 50vh;
+}
+.div4{
+    background-color:brown;
+    width: 50vw;
+    /* 50%den farklı */
 }
