@@ -18,3 +18,22 @@
     clear: both;
     /* her iki taraftaki floatları temizler */
 }
+
+#boxes{
+
+    float: left;
+    width: 33.33%;
+    font-size: 2rem;
+}
+.box1{
+
+    background-color: darkgoldenrod;
+}
+.box2{
+
+    background-color:blue;
+}
+.box3{
+
+    background-color:darkgreen;
+}
