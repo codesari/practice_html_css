@@ -1,3 +1,15 @@
+
+body{
+
+    /* body,görünen alanın tamamı değil,width vermen lazım */
+    background-color: burlywood;
+    border: 2px solid red;
+    height: 100%;
+    width: 100%;
+    /* body,içeriği kapsıyor */
+}
+
+
 .abs{
     background-color: aqua;
     
@@ -18,4 +30,15 @@
     background-color:brown;
     width: 50vw;
     /* 50%den farklı */
+}
+
+.d1{
+    font-size: 1em;
+    /* 1em=16px; */
+}
+.d2{
+    font-size: 2em;
+}
+.d3{
+    font-size: 3em;
 }
