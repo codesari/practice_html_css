@@ -1,4 +1,4 @@
-.box{
+.box {
 
     border: 5px solid black;
     margin-bottom: 4rem;
@@ -7,24 +7,40 @@
     background-color: darkkhaki;
 }
 
-.box1{
+.box1 {
 
-    /* overflow: hidden; kutunun dışına taşan herşeyi gizler */
+    overflow: visible;
 
 }
-.box2{
 
-    
+.box2 {
+    overflow: hidden;
+    /* kutunun dışına taşan herşeyi gizler */
+
 }
-.box3{
 
-    
+.box3 {
+
+    overflow: scroll;
 }
-.box4{
 
-    
+.box4 {
+    overflow: auto;
+    /* metnin boyutuna göre scroll açar veya açmaz */
+
 }
-.box5{
 
-    
+.box5 {
+
+    overflow: auto;
+    /* overflow-y: ;  */
+    /* overflow-x: ; */
+
+
+
+}
+
+#paragraf {
+    width: 10rem;
+    overflow: auto;
 }
