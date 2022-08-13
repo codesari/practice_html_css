@@ -1,5 +1,6 @@
 .img-float{
 
+    /* float yüzdürmek için  */
     width: 40%;
     /* float: left; */
     float: right;
@@ -11,4 +12,9 @@
 
     background-color: chartreuse;
     text-align: justify;
+}
+
+.clear{
+    clear: both;
+    /* her iki taraftaki floatları temizler */
 }
