@@ -1,0 +1,50 @@
+*{
+
+    border: 2px solid red;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header{
+
+    background-color: rgb(66, 94, 128);
+    margin-top: 10px;
+}
+
+main{
+
+    background-color: burlywood;
+    padding: 5px;
+    /* height: 300px; */
+}
+
+aside{
+    background-color: blueviolet;
+    width: 25%;
+    height: 300px;
+    float: left;
+    margin-left: 10px;
+}
+
+article{
+
+    background-color: darkgreen;
+    width: 70%;
+    height: 300px;
+    float: left;
+}
+footer{
+    background-color: crimson;
+    
+}
+
+/* .clear{
+    clear: both;
+    border: none;
+} */
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
