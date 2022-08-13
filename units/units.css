@@ -34,11 +34,16 @@ body{
 
 .d1{
     font-size: 1em;
-    /* 1em=16px; */
+    /* 16px */
 }
 .d2{
     font-size: 2em;
+    /* 32px */
+    
 }
 .d3{
-    font-size: 3em;
+    font-size: 0.5em;
+    /* 3*16px olması beklenirken parentından dolayı 32px*3 oldu */
+
+    /* 96px */
 }
