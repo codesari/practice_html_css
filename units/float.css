@@ -1,0 +1,14 @@
+.img-float{
+
+    width: 40%;
+    /* float: left; */
+    float: right;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.par1{
+
+    background-color: chartreuse;
+    text-align: justify;
+}
