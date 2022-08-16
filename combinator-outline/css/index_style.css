@@ -22,13 +22,37 @@
 
 /* h1 elementinden sonraki ilk p yi seçmek */
 /* class ın önceliği var çünkü daha özel,adresinin direk belli ediyor,bu aşağıdaki kod yukarıdaki kodu ezemiyor */
+/* adjacent siblings */
 h1 + p{
     color:blue;
 }
 
-* {
+/* h1 den sonraki tüm p leri görmek istiyorsan */
+/* bunun aktif olması için yukarıdaki özel seçicilerin kalkması lazım */
+h1 ~ p {
+    color:blue;
+}
+
+/* * {
     color:deeppink;
 
+} */
+.my-input:checked{
+    color:red;
+}
+
+.my-input:active{
+    color:greenyellow;
+}
+
+h3{
+    border: 1px solid red;
+    margin: 2rem;
+    outline: 3px solid cyan;
+    outline-offset: 10px;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
 }
 
 
