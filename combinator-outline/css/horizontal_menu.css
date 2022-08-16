@@ -1,0 +1,48 @@
+html{
+
+    /* font-size: 30px;
+    buradan root u değiştirmediğin sürece standart 1rem = 16px dir
+    30px aktif olursa 1 rem = 3opx olur.  */
+}
+
+body{
+
+    font-family: 'DynaPuff', cursive;
+
+}
+
+/* nav .yatay-menu ul li a da olur */
+nav.yatay-menu a{
+    text-decoration: none;
+    color: black;
+
+}
+
+nav.yatay-menu ul{
+    list-style-type: none;
+
+}
+
+/* yan yana dizmek için display flex kullanılır !!!! */
+nav.yatay-menu ul li{
+    display: inline-block;
+    background-color: wheat;
+    padding: 1rem 2 rem;
+    margin-right: 2 rem;
+    margin-bottom: 1 rem;
+    width: 5rem;
+    border-radius: 20px;
+
+}
+
+nav.yatay-menu ul li:hover{
+
+    background-color: blueviolet;
+    
+}
+/* bir element hover olduğunda başka bir elementi hover dedebiliriz */
+nav.yatay-menu ul li:hover a{
+
+    background-color: blueviolet;
+    color: chartreuse;
+}
