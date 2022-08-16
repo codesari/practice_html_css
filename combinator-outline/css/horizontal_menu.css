@@ -38,6 +38,7 @@ nav.yatay-menu ul li{
 nav.yatay-menu ul li:hover{
 
     background-color: blueviolet;
+    cursor: pointer;
     
 }
 /* bir element hover olduğunda başka bir elementi hover dedebiliriz */
@@ -45,4 +46,13 @@ nav.yatay-menu ul li:hover a{
 
     background-color: blueviolet;
     color: chartreuse;
+}
+
+nav.acilir-menu ul {
+    display: none;
+}
+
+/* acilir menunun hover inda ul yi göster */
+nav.acilir-menu:hover ul {
+    display: block;
 }
