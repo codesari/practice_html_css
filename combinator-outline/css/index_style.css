@@ -1,0 +1,21 @@
+/** COMBINATORS */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* tarayıcıya göre değişmesin diye bu ayarları yapıyoruz */
+}
+
+/*? Descendent Selector */
+.kutu p {
+
+    color: red;
+}
+
+.kutu >p{
+
+    color: green;
+}
+
