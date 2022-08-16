@@ -56,3 +56,11 @@ nav.acilir-menu ul {
 nav.acilir-menu:hover ul {
     display: block;
 }
+
+nav.acilir-menu .fa-bars:active {
+    opacity: 0.5;
+  }
+nav.acilir-menu{
+    border: solid red 2px;
+    width: 50%;
+}
