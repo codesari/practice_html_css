@@ -7,15 +7,30 @@
 
     /* tarayıcıya göre değişmesin diye bu ayarları yapıyoruz */
 }
-
 /*? Descendent Selector */
+
 .kutu p {
 
     color: red;
 }
-
+/* Child Selector */
+/* parenti kutu classı olan bütün p leri seç  */
 .kutu >p{
 
     color: green;
 }
+
+/* h1 elementinden sonraki ilk p yi seçmek */
+/* class ın önceliği var çünkü daha özel,adresinin direk belli ediyor,bu aşağıdaki kod yukarıdaki kodu ezemiyor */
+h1 + p{
+    color:blue;
+}
+
+* {
+    color:deeppink;
+
+}
+
+
+
 
