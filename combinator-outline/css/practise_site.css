@@ -1,0 +1,34 @@
+body{
+    font-family: O;
+}
+
+nav.nav-top img{
+
+    width: 50px;
+    /* resimler genellikle px ile kullanılır */
+}
+.sign-in{
+
+    float: right;
+}
+
+nav.nav-top{
+    background-color: violet;
+    /* arka plan rengini açıktan kapalıya doğru gösterme kodu */
+    background-image:linear-gradient(to right,white,cyan,red) ;
+}
+
+/* text align dikey hizalama yapmaz  */
+nav.nav-top .sign-in{
+
+    float: right;
+    margin: 1.5rem 1.5rem;
+    /* color: white; */
+}
+
+nav.nav-top .sign-in a{
+
+    color: white;
+}
+
+/** NAV-MAİN */
