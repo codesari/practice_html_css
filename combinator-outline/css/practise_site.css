@@ -2,32 +2,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
-nav.nav-top img{
+nav.nav-top img {
 
     width: 50px;
 
-outline-offset: 3px;
+    outline-offset: 3px;
     /* resimler genellikle px ile kullanılır */
 }
 
-nav.nav-top{
+nav.nav-top {
 
-    background-image: linear-gradient( to right, rgb(169, 152, 152), rgba(204, 7, 191, 0.769) );
-     padding: 8px;
-     width: 1423px;
-     height: 86px;
-  
+    background-image: linear-gradient(to right, rgb(169, 152, 152), rgba(204, 7, 191, 0.769));
+    padding: 8px;
+    width: 1423px;
+    height: 86px;
+
 }
 
 /* text align dikey hizalama yapmaz  */
-nav.nav-top .sign-in{
+nav.nav-top .sign-in {
 
     float: right;
     margin: 1.5rem 1.5rem;
@@ -35,31 +35,31 @@ nav.nav-top .sign-in{
     /* color: white; */
 }
 
-nav.nav-top .sign-in a{
+nav.nav-top .sign-in a {
 
     color: white;
     text-decoration: none;
-    
+
 }
-nav.nav-top .sign-in a:hover{
+
+nav.nav-top .sign-in a:hover {
 
     color: black
-    
 }
 
 .clearfix {
     clear: both;
-  }
+}
 
 /** NAV-MAİN */
 
 nav.main {
     padding: 32px 32px;
-    background-color:#FFAA53 ;
+    background-color: #FFAA53;
     position: sticky;
     text-align: center;
     font-size: 1.1rem;
-font-family: "DynaPuff", cursive;
+    font-family: "DynaPuff", cursive;
 }
 
 nav.main a {
@@ -67,6 +67,10 @@ nav.main a {
     text-decoration: none;
     color: black;
     margin-right: 2rem;
+}
+
+main {
+    padding: 32px;
 }
 
 main p {
