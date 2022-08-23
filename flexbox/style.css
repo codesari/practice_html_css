@@ -107,3 +107,42 @@ div.grow3 {
 div.nogrow {
     flex-grow: 0;
 }
+
+.container3 {
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    gap: 1rem;
+    /* width: ; */
+
+
+}
+
+.container3 div {
+
+    background-color: chartreuse;
+    width: 5rem;
+
+
+}
+
+div.div1 {
+    width: 25%;
+}
+
+div.div2 {
+    width: 25%;
+}
+
+div.div3 {
+    width: 25%;
+
+}
+
+div.div4 {
+    width: 25%;
+
+}
