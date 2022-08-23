@@ -88,4 +88,22 @@
 
     background-color: chartreuse;
     width: 5rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    /* itemlara ihtiyacı kadar yer tahsis ediyor veya sadece içeriğin büyüklüğü kadar bir uzunluk veriyor */
+
+}
+
+div.grow2 {
+    flex-grow: 2;
+    /* diğer butonlara göre 2 kat fazla büyüyecek */
+}
+
+div.grow3 {
+    flex-grow: 3;
+    /* diğer butonlara göre 2 kat fazla büyüyecek */
+}
+
+div.nogrow {
+    flex-grow: 0;
 }
