@@ -51,6 +51,7 @@
 .container1 {
     flex-direction: row;
     /* justify-content: center; */
+    flex-wrap: wrap;
 
     height: 20rem;
     background-color: green;
@@ -59,7 +60,7 @@
     padding: 0.5rem;
 
     /* dikey hizalama */
-    align-items: flex-end;
+    /* align-items: flex-end; */
     align-content: flex-end;
     /* overflow: auto; */
 }
@@ -69,4 +70,22 @@
     height: 5rem;
     width: 5rem;
     background-color: tomato;
+}
+
+.container2 {
+
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    gap: 1rem;
+
+
+}
+
+.container2 div {
+
+    background-color: chartreuse;
+    width: 5rem;
 }
