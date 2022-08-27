@@ -10,11 +10,14 @@ body {
     font-family: var(--ff-monteserrat);
     background-color: var(--mavi-9);
     color: var(--siyah);
+    font-weight: 500;
+    margin: 1rem;
 }
 
 h1 {
     background-color: var(--koyu-kirmizi);
     width: 20rem;
+    /* width e değer verdiğimizde sabit bir değeri olur.ama yüzde ile verdğimizde taşıyıcısının yüzdesi kadar büyüklüü olur,pencere küçülünce küçülür */
     padding: 0.5rem;
     border: 1px solid black;
     border-radius: 30px;
@@ -28,4 +31,102 @@ h1 {
     background-color: var(--koyu-yesil);
     padding: 1rem;
     font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    /* default değer zaten flex-start */
+    background-color: var(--gri-3);
+    margin-bottom: 0.5rem;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--beyaz);
+    padding: 1rem 3rem;
+
+}
+
+.navbar a:hover {
+    background-color: var(--gri-7);
+    color: var(--siyah);
+    transition: 1s;
+    font-weight: 700;
+}
+
+.row {
+
+    display: flex;
+    /* bu özelliği verdik çünkü yatay ve dikey olarak burası değişebilir */
+    text-align: center;
+    justify-content: center;
+    /* flex-wrap,default olarak nowraptır,yani pencereyi küçülttüğün zaman sıkıştırmaya çalışır,bir alt satıra düşürtmez */
+    flex-wrap: wrap;
+}
+
+.row {
+    gap: 1rem 0;
+    /* 1.deger satırlar arası boşluk */
+    /* 2.eger sütunlar arasi bosluk */
+}
+
+.col {
+    padding: 1rem;
+}
+
+.fs {
+    /* bu 4 columna width verince flex wrap özelliği devre dışı oldu(alt alta düşme) */
+    width: 35%;
+    background-color: var(--gri-5);
+}
+
+.aws {
+    width: 20%;
+    background-color: var(--gri-6);
+}
+
+.data {
+    width: 30%;
+    background-color: var(--gri-7);
+}
+
+.cms {
+    width: 15%;
+    background-color: var(--gri-8);
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    body {
+        color: var(--beyaz);
+        background-color: var(--acik-kirmizi);
+    }
+
+    .col {
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width : 0px) and (max-width:600px) {
+    body {
+        background-color: var(--mor);
+        color: var(--beyaz)
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .col {
+        width: 100%;
+    }
+
 }
