@@ -65,9 +65,6 @@ h1 {
     justify-content: center;
     /* flex-wrap,default olarak nowraptır,yani pencereyi küçülttüğün zaman sıkıştırmaya çalışır,bir alt satıra düşürtmez */
     flex-wrap: wrap;
-}
-
-.row {
     gap: 1rem 0;
     /* 1.deger satırlar arası boşluk */
     /* 2.eger sütunlar arasi bosluk */

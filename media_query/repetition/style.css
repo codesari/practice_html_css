@@ -1,0 +1,127 @@
+@import "theme.css";
+
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: var(--ff-monteserrat);
+    margin: 0;
+}
+
+body {
+    background-color: var(--mavi-9);
+    margin: 1rem;
+}
+
+h1 {
+    background-color: var(--koyu-kirmizi);
+    width: 20rem;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 2rem auto;
+    /* 
+eğer ortalama işlemini div ile yapacaksak
+display: flex;
+justify-content: center; */
+
+}
+
+.header {
+    background-color: var(--koyu-yesil);
+    padding: 20px;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* default */
+    background-color: var(--gri-3);
+    color: var(--siyah);
+    margin-bottom: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--beyaz);
+    padding: 15px 20px;
+}
+
+.navbar a:hover {
+    background-color: var(--gri-7);
+    color: var(--siyah);
+    transition: 1s;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+
+}
+
+.col {
+    padding: 1rem;
+}
+
+.col1 {
+    width: 35%;
+    background-color: var(--gri-5);
+}
+
+.col2 {
+    width: 20%;
+    background-color: var(--gri-6);
+}
+
+.col3 {
+    width: 30%;
+    background-color: var(--gri-7);
+}
+
+.col4 {
+    width: 15%;
+    background-color: var(--gri-8);
+}
+
+@media screen and (min-width:600px) and (max-width:1000px) {
+
+    /* buradaki min ve max değerlerine geldiği an değişim başlar */
+    body {
+        background-color: var(--acik-kirmizi);
+        color: var(--beyaz);
+    }
+
+    .col {
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:599px) {
+    body {
+        background-color: var(--mor);
+    }
+
+    .header {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col {
+        width: 100%;
+        margin: 0.5rem;
+    }
+
+
+
+
+
+}
