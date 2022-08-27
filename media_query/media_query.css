@@ -7,5 +7,25 @@
 
 body {
 
-    font-family: var(--ff-roboto);
+    font-family: var(--ff-monteserrat);
+    background-color: var(--mavi-9);
+    color: var(--siyah);
+}
+
+h1 {
+    background-color: var(--koyu-kirmizi);
+    width: 20rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    margin: 2rem auto;
+    /* 1rem üstten alttan verdik.auto diyince de sağdan soldan otomatik boşluk vererek ortalamış olduk */
+    /* ya da div açıp text-align center diyecektik */
+}
+
+.header {
+    background-color: var(--koyu-yesil);
+    padding: 1rem;
+    font-size: 32px;
 }
