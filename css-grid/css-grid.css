@@ -1,15 +1,41 @@
 * {
     box-sizing: border-box;
     margin: 1rem;
+    text-align: center;
 }
 
 .container {
     display: grid;
+    /* ! Sütun oluşturma */
     grid-template-columns: 200px 40vw 20rem;
-    grid-template-rows: 100px 500px 20vh 5rem;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* ! Satır oluşturma */
+    grid-template-rows: 100px 500px 20vh 4rem;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    justify-content: center;
+    align-items: center;
+    /* kendi item(satır) içerisinde dikey hizalama yapıyor */
 }
 
 .content {
     background-color: wheat;
     border: 2px solid green;
+    /* ! Grid içinde flex kullanımı..Sayfa komple grid yapısında.Contentlerin displayinin flex yaptığımız an flex yapısını kulllanmış oluyoruz(grid içinde flex) Her bir satırı bir div gibi düşünebiliriz*/
+    display: flex;
+    /* yatay hizalama */
+    justify-content: center;
+    /* dikey hizalama */
+    align-items: center;
+
+
+}
+
+.content5 {
+    background-image: url(https://cdn.pixabay.com/photo/2022/08/17/08/58/sun-has-7391959_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.content6 {
+    background-color: chartreuse;
 }
