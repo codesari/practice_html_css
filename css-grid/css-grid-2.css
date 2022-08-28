@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 200px 20vh calc(100vh - (200px - 30vh)) 10vh;
+    /* 100vh = ekranın tamami */
+    /* 3.satirin alanını diğer 3 satırın toplamını 100vh(tüm ekran alani) dan çıkararak belirledik */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/298/250/557/keyboard-backlight-keys-wallpaper-preview.jpg);
+    grid-column: span 12;
+    /* 12 birim yer kaplasın */
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: lightskyblue;
+    grid-column: span 12;
+}

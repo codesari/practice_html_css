@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px 400px 70px;
+}
+
+.box {
+    /* margin: 0.5rem; */
+    /* padding: 0.5rem; */
+    border: 2px solid green;
+    text-align: center;
+
+
+}
+
+.box1 {
+    /* ! header */
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/298/250/557/keyboard-backlight-keys-wallpaper-preview.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.box2 {
+    /* ! navbar */
+    background-color: lightseagreen;
+
+}
+
+.box3 {
+    /* ! main */
+    display: flex;
+}
+
+.aside {
+    padding: 1rem;
+    border: solid red 2px;
+    width: 30%;
+    height: 100%;
+    /* aside ve menu div ile oluşturulduğundan ve heigth verildiğinden dikey hizalama yapılmadı */
+    background-color: whitesmoke;
+
+}
+
+.menu {
+    padding: 1rem;
+    border: solid red 2px;
+    width: 70%;
+    height: 100%;
+    background-color: orangered;
+}
+
+.box4 {
+
+    background-color: lightseagreen;
+
+}
