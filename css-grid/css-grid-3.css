@@ -5,11 +5,17 @@
 }
 
 .container {
+    /* ! GRİD AREA İLE TANIMLAMA (2.YÖNTEM) */
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        "header header header header "
+        "nav nav nav nav"
+        "aside main main main"
+        "footer footer footer footer"
+    ;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 200px 10vh calc(100vh - (200px - 20vh)) 10vh;
-    /* 100vh = ekranın tamami */
-    /* 3.satirin alanını diğer 3 satırın toplamını 100vh(tüm ekran alani) dan çıkararak belirledik */
+
 }
 
 .content {
@@ -22,7 +28,7 @@
 
 header {
     background-image: url(https://p4.wallpaperbetter.com/wallpaper/298/250/557/keyboard-backlight-keys-wallpaper-preview.jpg);
-    grid-column: span 12;
+    grid-area: header;
     /* 12 birim yer kaplasın */
     background-size: cover;
     background-position: center;
@@ -30,21 +36,24 @@ header {
 
 nav {
     background-color: lightskyblue;
-    grid-column: span 12;
+    grid-area: nav;
 }
 
 aside {
     background-color: wheat;
-    grid-column: span 3;
+    grid-area: aside;
+
 }
 
 main {
     background-color: tomato;
-    grid-column: span 9;
+    grid-area: main;
+
 
 }
 
 footer {
     background-color: lightseagreen;
-    grid-column: span 12;
+    grid-area: footer;
+
 }
