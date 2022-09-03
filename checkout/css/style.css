@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  border: 2px solid black;
+}
+.container .forms {
+  display: flex;
+  flex-direction: column;
+}
+.container .country-pcode {
+  display: flex;
+}
+.container .country-pcode .country, .container .country-pcode .postcode {
+  display: flex;
+  flex-direction: column;
+}
+.container .left-container {
+  border: solid red 2px;
+}
+.container .right-container {
+  border: 2px solid green;
+}
+
+/*# sourceMappingURL=style.css.map */
