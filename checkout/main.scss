@@ -4,11 +4,11 @@
   padding: 0;
 }
 
-$myBorder: 2px solid black;
-
 .container {
   display: flex;
-  border: $myBorder;
+  padding: 4rem;
+  gap: 2rem;
+
   .forms {
     display: flex;
     flex-direction: column;
@@ -26,8 +26,32 @@ $myBorder: 2px solid black;
   }
   .left-container {
     border: solid red 2px;
+    padding: 1rem;
   }
   .right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     border: 2px solid green;
+    padding: 1rem;
+    background-color: #eeeeee;
+    width: 25%;
+    border-radius: 5px;
+
+    .section {
+      display: flex;
+      gap: 1rem;
+      img {
+        border-radius: 10px;
+        height: 120px;
+        // width: 100px;
+      }
+      .text-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //
+      }
+    }
   }
 }

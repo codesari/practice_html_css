@@ -6,7 +6,8 @@
 
 .container {
   display: flex;
-  border: 2px solid black;
+  padding: 4rem;
+  gap: 2rem;
 }
 .container .forms {
   display: flex;
@@ -21,9 +22,30 @@
 }
 .container .left-container {
   border: solid red 2px;
+  padding: 1rem;
 }
 .container .right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   border: 2px solid green;
+  padding: 1rem;
+  background-color: #eeeeee;
+  width: 25%;
+  border-radius: 5px;
+}
+.container .right-container .section {
+  display: flex;
+  gap: 1rem;
+}
+.container .right-container .section img {
+  border-radius: 10px;
+  height: 120px;
+}
+.container .right-container .section .text-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
