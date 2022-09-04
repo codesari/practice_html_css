@@ -16,13 +16,15 @@
           <h3>Contact İnformation</h3>
           <label for="email">Email</label>
           <input
+            class="input"
             type="email"
             name="email"
             id="email"
             placeholder="Enter your email"
           />
-          <label for="phone">Phone</label>
+          <label class="input" for="phone">Phone</label>
           <input
+            class="input"
             type="number"
             name="phone"
             id="phone"
@@ -32,6 +34,7 @@
           <h3>Shipping address</h3>
           <label for="name">Full name</label>
           <input
+            class="input"
             type="text"
             name="name"
             id="name"
@@ -39,13 +42,20 @@
           />
           <label for="address">Address</label>
           <input
+            class="input"
             type="text"
             name="address"
             id="address"
             placeholder="Enter your address"
           />
           <label for="city">City</label>
-          <input type="text" name="city" id="city" />
+          <input
+            class="input"
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter your city..."
+          />
           <div class="country-pcode">
             <div class="country">
               <label for="country">Country</label>
@@ -53,12 +63,27 @@
             </div>
             <div class="postcode">
               <label for="postcode">Post Code</label>
-              <input type="text" name="postcode" id="postcode" />
+              <input
+                class="input"
+                type="text"
+                name="postcode"
+                id="postcode"
+                placeholder="Enter your postal code"
+              />
             </div>
           </div>
         </form>
-        <input type="checkbox" name="reminder" id="reminder" />
+        <input
+          id="reminder"
+          class="input"
+          type="checkbox"
+          name="reminder"
+          id="reminder"
+        />
         <label for="reminder">See this information next time</label>
+        <div class="button">
+          <button>Continue</button>
+        </div>
       </aside>
       <aside class="right-container">
         <div class="section">
@@ -68,7 +93,7 @@
           <div class="text-button">
             <div class="text">
               <p>Vintage Backbag</p>
-              <span>$54.99 </span><span>$94.99</span>
+              <span id="colored">$54.99 </span><span id="deleted">$94.99</span>
             </div>
 
             <div class="buttons">
@@ -85,7 +110,7 @@
           <div class="text-button">
             <div class="text">
               <p>Levi Shoes</p>
-              <span>$74.99 </span><span>$124.99</span>
+              <span id="colored">$74.99 </span><span id="deleted">$124.99</span>
             </div>
 
             <div class="buttons">
@@ -95,10 +120,23 @@
             </div>
           </div>
         </div>
+        <div class="bottom-information">
+          <div class="hr-shipping">
+            <hr />
+            <div class="shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+          </div>
+          <div class="total-div">
+            <hr />
+            <div class="total">
+              <p>Total</p>
+              <p>$148.98</p>
+            </div>
+          </div>
+        </div>
       </aside>
-    </div>
-    <div class="button">
-      <button>Continue</button>
     </div>
   </body>
 </html>

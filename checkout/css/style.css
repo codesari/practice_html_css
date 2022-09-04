@@ -4,34 +4,61 @@
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  padding: 0.2rem;
+}
+
 .container {
   display: flex;
-  padding: 4rem;
-  gap: 2rem;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
 }
 .container .forms {
   display: flex;
   flex-direction: column;
 }
+.container .forms .input,
+.container .forms h3,
+.container .forms label {
+  padding: 0.3rem;
+  margin: 0.1rem;
+}
 .container .country-pcode {
   display: flex;
+  gap: 0.5rem;
 }
 .container .country-pcode .country, .container .country-pcode .postcode {
   display: flex;
   flex-direction: column;
 }
+.container .country-pcode .country select, .container .country-pcode .postcode select {
+  padding: 0.4rem;
+}
 .container .left-container {
-  border: solid red 2px;
+  width: 50%;
   padding: 1rem;
+}
+.container .left-container .button {
+  display: flex;
+  justify-content: flex-end;
+}
+.container .left-container .button button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #f2994a;
 }
 .container .right-container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  border: 2px solid green;
   padding: 1rem;
   background-color: #eeeeee;
   width: 25%;
+  height: 100%;
   border-radius: 5px;
 }
 .container .right-container .section {
@@ -45,7 +72,34 @@
 .container .right-container .section .text-button {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.container .right-container .shipping, .container .right-container .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
+.container .right-container .buttons {
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.2rem;
+}
+.container .right-container .buttons button {
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+.container #reminder {
+  margin: 0.5rem;
+}
+.container #colored {
+  color: #f0a454;
+}
+.container #deleted {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */
