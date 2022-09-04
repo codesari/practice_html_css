@@ -2,11 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: grey;
 }
 
 h1 {
   text-align: center;
   padding: 0.2rem;
+  color: black;
+}
+
+h3 {
+  color: black;
 }
 
 .container {
@@ -48,7 +54,7 @@ h1 {
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: whitesmoke;
   background-color: #f2994a;
 }
 .container .right-container {
@@ -70,27 +76,34 @@ h1 {
   height: 120px;
 }
 .container .right-container .section .text-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: block;
 }
-.container .right-container .shipping, .container .right-container .total {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.3rem;
-}
-.container .right-container .buttons {
+.container .right-container .section .text-button .buttons {
   border: 1px solid grey;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
   padding: 0.2rem;
+  width: 6rem;
+  margin-top: 2.5rem;
 }
-.container .right-container .buttons button {
+.container .right-container .section .text-button .buttons button {
   padding: 0.3rem;
   border: none;
   border-radius: 5px;
   background-color: #e0e0e0;
+  color: black;
+  font-weight: 700;
+}
+.container .right-container .section .text-button .buttons span {
+  font-size: small;
+  display: flex;
+  align-items: center;
+}
+.container .right-container .shipping, .container .right-container .total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
 }
 .container #reminder {
   margin: 0.5rem;
@@ -100,6 +113,7 @@ h1 {
 }
 .container #deleted {
   text-decoration: line-through;
+  font-size: small;
 }
 
 /*# sourceMappingURL=style.css.map */

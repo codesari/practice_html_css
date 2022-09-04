@@ -2,11 +2,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: grey;
 }
 h1 {
   text-align: center;
   padding: 0.2rem;
+  color: black;
 }
+h3 {
+  color: black;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -49,7 +55,7 @@ h1 {
         padding: 0.5rem;
         border-radius: 5px;
         border: none;
-        color: white;
+        color: whitesmoke;
         background-color: #f2994a;
       }
     }
@@ -74,9 +80,29 @@ h1 {
         // width: 100px;
       }
       .text-button {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: block;
+        .buttons {
+          border: 1px solid grey;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-evenly;
+          padding: 0.2rem;
+          width: 6rem;
+          margin-top: 2.5rem;
+          button {
+            padding: 0.3rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0;
+            color: black;
+            font-weight: 700;
+          }
+          span {
+            font-size: small;
+            display: flex;
+            align-items: center;
+          }
+        }
       }
     }
 
@@ -88,19 +114,6 @@ h1 {
     .total {
       @extend .shipping;
     }
-    .buttons {
-      border: 1px solid grey;
-      border-radius: 5px;
-      display: flex;
-      justify-content: space-evenly;
-      padding: 0.2rem;
-      button {
-        padding: 0.3rem;
-        border: none;
-        border-radius: 5px;
-        background-color: #e0e0e0;
-      }
-    }
   }
   #reminder {
     margin: 0.5rem;
@@ -111,5 +124,6 @@ h1 {
   }
   #deleted {
     text-decoration: line-through;
+    font-size: small;
   }
 }
