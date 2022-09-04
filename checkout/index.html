@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -14,7 +21,7 @@
       <aside class="left-container">
         <form class="forms">
           <h3>Contact İnformation</h3>
-          <label for="email">Email</label>
+          <label for="email">Email </label>
           <input
             class="input"
             type="email"
@@ -22,6 +29,8 @@
             id="email"
             placeholder="Enter your email"
           />
+          <i class="fa-solid fa-envelope"></i>
+
           <label class="input" for="phone">Phone</label>
           <input
             class="input"
@@ -30,6 +39,7 @@
             id="phone"
             placeholder="Enter your phone"
           />
+          <i class="fa-solid fa-phone"></i>
 
           <h3>Shipping address</h3>
           <label for="name">Full name</label>
@@ -40,6 +50,7 @@
             id="name"
             placeholder="Enter your Full name"
           />
+          <i class="fa-solid fa-user"></i>
           <label for="address">Address</label>
           <input
             class="input"
@@ -48,6 +59,7 @@
             id="address"
             placeholder="Enter your address"
           />
+          <i class="fa-solid fa-house"></i>
           <label for="city">City</label>
           <input
             class="input"
@@ -56,13 +68,17 @@
             id="city"
             placeholder="Enter your city..."
           />
+          <i class="fa-solid fa-city"></i>
           <div class="country-pcode">
             <div class="country">
               <label for="country">Country</label>
+
               <select name="country" id="country"></select>
+              <i class="fa-solid fa-globe"></i>
             </div>
             <div class="postcode">
               <label for="postcode">Post Code</label>
+
               <input
                 class="input"
                 type="text"
@@ -70,6 +86,7 @@
                 id="postcode"
                 placeholder="Enter your postal code"
               />
+              <i class="fa-sharp fa-solid fa-envelopes-bulk"></i>
             </div>
           </div>
         </form>

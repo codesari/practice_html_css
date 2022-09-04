@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: grey;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
   text-align: center;
@@ -22,11 +25,14 @@ h3 {
   .forms {
     display: flex;
     flex-direction: column;
-    .input,
+
     h3,
     label {
       padding: 0.3rem;
       margin: 0.1rem;
+    }
+    .input {
+      padding: 8px 5px 8px 30px;
     }
   }
   .country-pcode {
@@ -81,21 +87,25 @@ h3 {
       }
       .text-button {
         display: block;
+        p {
+          margin-top: 0.1rem;
+        }
         .buttons {
           border: 1px solid grey;
           border-radius: 5px;
           display: flex;
           justify-content: space-evenly;
-          padding: 0.2rem;
+          padding: 0.1rem;
           width: 6rem;
           margin-top: 2.5rem;
           button {
-            padding: 0.3rem;
+            padding: 0.2rem;
             border: none;
             border-radius: 5px;
             background-color: #e0e0e0;
             color: black;
-            font-weight: 700;
+            font-weight: 300;
+            font-size: large;
           }
           span {
             font-size: small;
@@ -125,5 +135,11 @@ h3 {
   #deleted {
     text-decoration: line-through;
     font-size: small;
+  }
+
+  i {
+    position: relative;
+    top: -25px;
+    left: 7px;
   }
 }

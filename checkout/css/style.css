@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: grey;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -25,11 +27,13 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-.container .forms .input,
 .container .forms h3,
 .container .forms label {
   padding: 0.3rem;
   margin: 0.1rem;
+}
+.container .forms .input {
+  padding: 8px 5px 8px 30px;
 }
 .container .country-pcode {
   display: flex;
@@ -78,22 +82,26 @@ h3 {
 .container .right-container .section .text-button {
   display: block;
 }
+.container .right-container .section .text-button p {
+  margin-top: 0.1rem;
+}
 .container .right-container .section .text-button .buttons {
   border: 1px solid grey;
   border-radius: 5px;
   display: flex;
   justify-content: space-evenly;
-  padding: 0.2rem;
+  padding: 0.1rem;
   width: 6rem;
   margin-top: 2.5rem;
 }
 .container .right-container .section .text-button .buttons button {
-  padding: 0.3rem;
+  padding: 0.2rem;
   border: none;
   border-radius: 5px;
   background-color: #e0e0e0;
   color: black;
-  font-weight: 700;
+  font-weight: 300;
+  font-size: large;
 }
 .container .right-container .section .text-button .buttons span {
   font-size: small;
@@ -114,6 +122,11 @@ h3 {
 .container #deleted {
   text-decoration: line-through;
   font-size: small;
+}
+.container i {
+  position: relative;
+  top: -25px;
+  left: 7px;
 }
 
 /*# sourceMappingURL=style.css.map */
